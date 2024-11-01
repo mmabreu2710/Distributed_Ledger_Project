@@ -20,30 +20,30 @@ To start each server, use the following commands in the project root directory:
 1. **DistLedgerServer**
    - This server handles the ledger's main operations and manages transaction storage and retrieval.
    - Run the following command:
-     """
+     ```
      mvn exec:java -pl DistLedgerServer -Dexec.mainClass="pt.tecnico.distledger.server.DistLedgerServerMain"
-     """
+     ```
 
 2. **NamingServer**
    - Facilitates server discovery, helping clients locate active DistLedgerServer instances.
    - To start the NamingServer, use:
-     """
+     ```
      mvn exec:java -pl NamingServer -Dexec.mainClass="pt.tecnico.distledger.namingserver.NamingServerMain"
-     """
+     ```
 
 3. **AdminClient**
    - The AdminClient allows administrators to configure and monitor the distributed ledger network.
    - To run the AdminClient, execute:
-     """
+     ```
      mvn exec:java -pl Admin -Dexec.mainClass="pt.tecnico.distledger.adminclient.AdminClientMain"
-     """
+     ```
 
 4. **UserClient**
    - The UserClient provides an interface for end users to perform transactions and interact with the ledger.
    - Use this command to start the UserClient:
-     """
+     ```
      mvn exec:java -pl User -Dexec.mainClass="pt.tecnico.distledger.userclient.UserClientMain"
-     """
+     ```
 
 ## Project Structure
 
